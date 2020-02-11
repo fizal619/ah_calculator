@@ -16,6 +16,21 @@ it("Button has correct classes by default", () => {
 
 });
 
+it("This test should fail 😈", () => {
+  const div = document.createElement("div");
+  ReactDOM.render(<Button
+    name="TEST"
+    clickHandler={jest.fn()}
+    />, div);
+
+    const buttonEl = div.querySelector('.component-button');
+
+    expect(Array.from(buttonEl.classList)).toEqual(expect.arrayContaining(["component-buttn"]))
+
+
+});
+
+
 it("Button has correct classes with props", () => {
   const div = document.createElement("div");
   ReactDOM.render(<Button
