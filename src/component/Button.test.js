@@ -16,6 +16,7 @@ it("Button has correct classes by default", () => {
 
 });
 
+
 it("Button has correct classes with props", () => {
   const div = document.createElement("div");
   ReactDOM.render(<Button
